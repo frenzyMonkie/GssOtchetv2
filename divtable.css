@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-size: 12px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.tc {
+    margin: auto;
+}
+
+.thead.tabrow {
+    background-color: #f5f5f5;
+}
+
+.tbody.tabrow {
+    /* background-color: #3f3f3f; */
+    background-color: #f3f2ee;
+}
+
+.tabrow {
+    position: relative;
+    background: #f3f2ee;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    border-bottom: 1px rgba(124, 138, 148, 0.507) solid;
+    line-height: 145%;
+}
+
+
+.tbody.tabrow:hover {
+    background-color: #f71414ab;
+    cursor: pointer;
+    
+}
+.tbody.tabrow:hover .tabcol {
+    /* position: relative;
+    z-index: -1; */
+    opacity: 0;
+}
+.tbody.tabrow:hover .delrow_p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+} 
+
+.delrow_p {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    /* left: 50%;
+    top: 50%; 
+    -webkit-transform: translate(-50%,-50%); 
+    transform: translate(-50%, -50%);  */
+}
+
+
+.tabcol {
+    padding: 0px 8px 0px 19px;
+    /* margin-block-start: 16px;
+    margin-block-end: 12px; */
+    margin-block-start: 13px;
+    margin-block-end: 15px;
+    word-wrap: break-all;
+    -webkit-line-clamp: 2; /* Число отображаемых строк */
+    display: -webkit-box; /* Включаем флексбоксы */
+    -webkit-box-orient: vertical; /* Вертикальная ориентация */
+    overflow: hidden; /* Обрезаем всё за пределами блока */
+    height: fit-content;
+    color: #3f3f3f;
+}
+
+.addrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    height: 53px;
+    margin-left: auto;
+    width: 40%;
+    margin: 10px 0 0 0;
+}
+
+.cancel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44px;
+    height: 53px;
+    margin-left: auto;
+    width: 40%;
+    margin: 10px 0 0 0;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+}

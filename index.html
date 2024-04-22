@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Standing Alone React</title>
+  </head>
+  <body>
+
+
+    <div id="root"></div>
+    <div class="cfe-app" data-userid='2'></div>
+    <div class="cfe-app" data-userid='3'></div>
+
+
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="dropdown.css">
+    <link rel="stylesheet" href="divtable.css">
+    <link rel="stylesheet" href="popup.css">
+    <script src="jq.js"></script>
+    <script src="dropdown.js"></script>
+
+
+    <!-- Load React. -->
+    <script  src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script  src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
+    <script  src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+
+
+    <!-- Our React App (notice the type is babel) -->
+    <script src="./imports.js" type='text/babel'></script>
+    <!-- <script src="./elements.js" type='text/babel'></script> -->
+    <!-- <script src="./blocks.js" type='text/babel'></script> -->
+    <!-- <script src="./render.js" type='text/babel'></script> -->
+    <script src="./table_useState_Editable.js" type='text/babel'></script>
+    
+
+
+  </body>
+</html>
